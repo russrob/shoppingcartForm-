@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Checkout</title>
+</head>
+<body>
 <div class="checkout-panel">
 	<div class="panel-body">
 		<h2 class="title">Checkout</h2>
@@ -16,7 +23,7 @@
 					<img src="img/MasterCard.png">
 					<img src="img/Amex.png">
 				</div>
-
+					<!-- radio buttons starts  -->
 				<div class="radio-input">
 					<input type="radio" name="payment" id="card">
 					 Pay $340.00 with credit card 
@@ -31,8 +38,38 @@
 					</input>
 				</div>
 			</label>
-
 		</div>
+		<!-- input starts  -->
+		<div class="input-fields">
+			<div class="column-1">
+				<label for="cardholder">Cardholder's Name</label>
+				<input type="text" id="cardholder">
+				<div class="small-inputs">
+					<div>
+						<label for="date">Valid thru </label>
+						<input type="text" id="date">
+					</div>
+					<div>
+						<label for="verification">CW / CVC</label>
+						<input type="password" id="verification">
+					</div>
+				</div>
+				<div class="column-2">
+					<label for="cardnumber">Card Number</label>
+					<input type="password" id="cardnumber">
 
+					<span class="info"> CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+				</div>
+			</div>		
+		</div>
+		<div class="panel-footer">
+			<button class="btn back-btn">Back</button>
+			<button class="btn back-btn">Next Step</button>
+		</div>
 	</div> <!-- end of body panel --> 
 </div> <!-- end of checkout panel -->
+</body>
+</html>
+
+
+
